@@ -1,0 +1,21 @@
+{
+  "short_name": "myMeal",
+  "name": "Sandip Meal",
+  "icons": [
+    {
+      "src": "https://sandiperp.com/images/sf/SandipFoundation.jpg",
+      "type": "image/jpg",
+      "sizes": "192x192"
+    },
+    {
+        "src": "https://sandiperp.com/images/sf/SandipFoundation.jpg",
+        "type": "image/jpg",
+        "sizes": "512x512"
+      }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff"
+}
