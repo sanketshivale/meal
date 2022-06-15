@@ -4,13 +4,29 @@
 <head>
   <meta charset="utf-8">
   <link rel=manifest href=webmanifest.json>
-  <title></title>
+  <title>Sandip Meal</title>
 </head>
 
 <body>
   <button onclick="myMeal()">Enter to get Meal</button>
 
   <script type="text/javascript">
+
+    function mealType(date){
+      var hours = date.getHours();
+      if(hours > 9 && hours < 10){
+        return "Breakfast";
+      }else if(hours > 12 && hours < 14){
+        return "Lunch";
+      }else if(hours > 19 && hours < 22){
+        return "Dinner";
+      }
+      else{
+        return "not valid";
+      }
+      return hours;
+    }
+
     function myMeal() {
       const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
         "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
@@ -20,11 +36,11 @@
       const time = today.toLocaleTimeString('en-US', {
         hour: 'numeric',
         minute: 'numeric',
-        hour24: true
+        hour12: true
       })
 
       var dateTime = date + ' ' + time;
-      alert("Canteen Name: Garlic || Meal Type: " + (hour<12 && "Breakfast" || hour<18 && "Lunch" || "Dinner") + dateTime + " Attendence Successfully Saved.");
+      alert("Canteen Name: Garlic || Meal Type: "+ mealType(new Date) +" || " + dateTime + " Attendence Successfully Saved.");
     }
   </script>
 </body>
