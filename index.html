@@ -24,7 +24,7 @@
       })
 
       var dateTime = date + ' ' + time;
-      alert("Canteen Name: Garlic || Meal Type:  || Date Time: " + dateTime + " Attendence Successfully Saved.");
+      alert("Canteen Name: Garlic || Meal Type: " + (hour<12 && "Breakfast" || hour<18 && "Lunch" || "Dinner") + dateTime + " Attendence Successfully Saved.");
     }
   </script>
 </body>
