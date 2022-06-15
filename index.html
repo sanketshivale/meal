@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <button onclick="myMeal()">Enter to get Meal</button>
+
+  <script type="text/javascript">
+    function myMeal() {
+      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
+      ];
+      var today = new Date();
+      var date = (monthNames[today.getMonth()]) + ' ' + today.getDate() + ' ' + today.getFullYear();
+      const time = today.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true
+      })
+
+      var dateTime = date + ' ' + time;
+      alert("Canteen Name: Garlic || Meal Type:  || Date Time: " + dateTime + " Attendence Successfully Saved.");
+    }
+  </script>
+</body>
+
+</html>
