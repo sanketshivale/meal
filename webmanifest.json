@@ -3,12 +3,12 @@
   "name": "Sandip Meal",
   "icons": [
     {
-      "src": "https://sandiperp.com/images/sf/SandipFoundation.jpg",
+      "src": "meal.jpg",
       "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-        "src": "https://sandiperp.com/images/sf/SandipFoundation.jpg",
+        "src": "meal.jpg",
         "type": "image/jpg",
         "sizes": "512x512"
       }
